@@ -10,13 +10,13 @@ To pull the customers as perCountry, my developers should know what are all the 
 
 # Steps in workflow:
 
-1.Read data for each country from source.
-2.Create text files.
-3.Read text files.
-4.Write data from each file to target tables in database.
+1. Read data for each country from source.
+2. Create text files.
+3. Read text files.
+4. Write data from each file to target tables in database.
 
 # Answers:
-
+```
 # Query to list the countries
 
 SELECT 
@@ -47,10 +47,11 @@ CREATE TABLE table_{country_name} (
     Is_Active CHAR(1),
     PRIMARY KEY (Customer_Name)
 );
-
+```
 
 # Python Program to read the data from file:
 
+```
 # Import required libraries
 import pandas as pd
 import numpy as np
